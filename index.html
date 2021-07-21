@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Weather DashboardS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="./assets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper orange">
+        <a href="#" class="brand-logo center">Welcome!</a>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col s3">
+            <h3><strong>Search for a City:</strong></h3>
+            <form id='form'>
+                <input id='citySel' placeholder="Columbus"></input>
+                <br></br>
+                <a type='submit' id='go' class="waves-effect waves-light btn-large orange">Search</a>
+            </form>
+            <br></br>
+            <a id='austin'class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>Austin</a>
+            <br></br>
+            <a id='miami'class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>Miami</a>
+            <br></br>
+            <a id='denver'class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>Denver</a>
+            <br></br>
+            <a id='cleveland'class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>Cleveland</a>
+        </div>
+        <div class="col s9">
+            <h3 id='currentCity'><strong>No city selected</strong></h3>
+            <p id='temp'></p>
+            <p id='wind'></p>
+            <p id='hum'></p>
+            <p id='condition'></p>
+            <br></br>
+            <h4 id='forecast'><strong>5 Day Forecast:</strong></h4>
+            <div id='dayContainer' class='container'>
+            <div id='one' class='col s2'>
+                <p id='p1'></p>
+                <p id='p2'></p>
+                <p id='p3'></p>
+                <p id='p4'></p>
+            </div>
+            <div id='two' class='col s2'>
+                <p id='p5'></p>
+                <p id='p6'></p>
+                <p id='p7'></p>
+                <p id='p8'></p>
+            </div>
+            <div id='three' class='col s2'>
+                <p id='p9'></p>
+                <p id='p10'></p>
+                <p id='p11'></p>
+                <p id='p12'></p>
+            </div>
+            <div id='four' class='col s2'>
+                <p id='p13'></p>
+                <p id='p14'></p>
+                <p id='p15'></p>
+                <p id='p16'></p>
+            </div>
+            <div id='five' class='col s2'>
+                <p id='p17'></p>
+                <p id='p18'></p>
+                <p id='p19'></p>
+                <p id='p20'></p>
+            </div>
+            </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./assets/script.js"></script>
+</body>
+</html>
