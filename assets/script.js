@@ -14,14 +14,27 @@ var cond = document.getElementById('condition')
 
 var daysButton = ['Austin', 'Miami', 'Denver', 'Cleveland']
 
-function weatherButtons(event) {
-    var choice = event.target.value
-    for (let i=0; i<daysButton.length; i++) {
-    if (event.target === daysButton[i]) {
-        getWeather(choice)
-    }
-    }
-}
+
+// function buttonWeather(arrayV) {
+//     var apiB = 'https://api.openweathermap.org/data/2.5/weather?q=Austin&appid=e7d689a4d83ddc518b720d647d633cf9'
+//     fetch(apiB)
+//         .then(function(response) {
+//             if (response.ok) {
+//                 response.json().then(function(data) {
+//                     displayCity(data, arrayV)
+//                 })
+//             }
+//         })
+//     var apiF = 'https://api.openweathermap.org/data/2.5/forecast?q=Austin&appid=e7d689a4d83ddc518b720d647d633cf9'
+//     fetch(apiF)
+//         .then(function(response) {
+//             if (response.ok) {
+//                 response.json().then(function(data) {
+//                     displayForecast(data, arrayV)
+//                 })
+//             }
+//         })
+// }
 
 function submit(event) {
     event.preventDefault()
@@ -55,7 +68,7 @@ function displayCity(weather) {
         current.textContent = 'No city selected'
         return
     }
-    current.textContent = searchedCity
+    current.textContent = weather.name
     temp1.textContent = 'Temperature in F: ' + parseInt((weather.main.feels_like - 273.15) * 9/5 + 32)
     wind2.textContent = 'Wind: ' + weather.wind.speed
     hum3.textContent = 'Humidity: ' + weather.main.humidity
@@ -104,4 +117,4 @@ function displayForecast(weather5) {
 
 
 search.addEventListener('click', submit)
-city1.addEventListener('click', weatherButtons)
+// city1.addEventListener('click', buttonWeather(daysButton[0]))
