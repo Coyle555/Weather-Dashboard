@@ -1,25 +1,25 @@
-# Demo                               [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Weather Dashboard                               [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description
-  qqqqqqqqqqqqqqqq
+  A weather application that uses fetch API calls to get weather data from any city in the world. The data is then dynamically populated to the HTML.
 
   ## Installation
-  wwwwwwwwwwwwwwwwwww
+  Clone the repo, and deploy the code through an interface of choice.
 
   ## Usage
-  eeeeeeeeeeeeeeeeeee
+  Can be used by anyone for anything.
 
   ## Contributing
-  rrrrrrrrrrrrrrrr
+  N/A
 
   ## Test
-  tttttttttttttttttt
+  Type a city in the search bar to get the current weather in the queried city.
 
   ## License
-  The code used in this project is licensed under the Apache 2.0 license(s).
+  The code used in this project is licensed under the MIT license(s).
 
   ## Questions
   Github: https://www.github.com/coyle555
 
-  Email: xcwc15@gmail.com
+  Email: carsoncoyle2015@gmail.com
 
   Feel free to email me before 9 p.m. M-F and I will try my best to get back to you ASAP.
