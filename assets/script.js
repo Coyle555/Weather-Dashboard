@@ -69,10 +69,10 @@ function displayCity(weather) {
         return
     }
     current.textContent = weather.name
-    temp1.textContent = 'Temperature in F: ' + parseInt((weather.main.feels_like - 273.15) * 9/5 + 32)
-    wind2.textContent = 'Wind: ' + weather.wind.speed
-    hum3.textContent = 'Humidity: ' + weather.main.humidity
-    cond.textContent = 'Weather condition: ' + weather.weather[0].description
+    temp1.textContent = 'Temperature (F*): ' + parseInt((weather.main.feels_like - 273.15) * 9/5 + 32)
+    wind2.textContent = 'Wind (mph): ' + weather.wind.speed
+    hum3.textContent = 'Humidity (g/kg): ' + weather.main.humidity
+    cond.textContent = 'Weather conditions: ' + weather.weather[0].description
     
 }
 
